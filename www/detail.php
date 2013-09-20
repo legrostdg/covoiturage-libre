@@ -122,7 +122,7 @@ $(document).ready(function(){
 		}
 		
 		var illegal = new RegExp("[\(\),;:!?<>\$аз&йщивко\*\^\'\"]+","g");
-		var legal = new RegExp("^\\w[\\w\-\_\.]*\\w@\\w[\\w\-\_\.]*\\w\\.\\w{2,4}$");
+		var legal = new RegExp("^\\w[\\w\-\_\.\+]*\\w@\\w[\\w\-\_\.]*\\w\\.\\w{2,4}$");
 		if ((illegal.test(email) == true) || (legal.test(email) != true)) {
 			alert("L'adresse e-mail qui a йtй saisie est incorrecte");
 			$('#EMAIL').focus();
